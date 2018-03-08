@@ -11,8 +11,13 @@
   height: 70px;
   padding: 0px 30px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  h2 {
+    padding-bottom: 20px;
+  }
+  .btn {
+    margin-top: 10px;
+  }
 }
 
 .navbar-wagon-right {
@@ -21,23 +26,25 @@
   justify-content: space-between;
 }
 
-.my_container {
-  background-color: white;
-  display: flex;
-  align-item: space-between;
+.my-container {
+  margin: 0 auto;
+  width: 970px;
 }
 
-.my_card {
-  margin-top: 200px;
+.my-card {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
   margin: 50px 20px;
   border-radius: 5px;
   border: 3px, solid, white;
-  .random-img {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  // .img-align {
+  //   display: flex;
+  //   align-item: space-around;
+  // }
+  .banner {
+    // margin: 20px 10px 40px 10px;
+    height: 200px;
     border-radius: 5px;
-
+    // border: 3px solid white;
   }
   .btn {
     margin-top: 30px;
@@ -48,15 +55,13 @@
 .footer {
   background: white;
   box-shadow: 2px 0px 0px rgba(0,0,0,0.3);
-  display: flex;
-  align-items: left;
-  justify-content: space-between;
   height: 50px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
   position: sticky;
   left: 0;
   bottom: 0;
+  padding-top: 10px;
 }
 .footer .fa-heart {
   color: #D23333;

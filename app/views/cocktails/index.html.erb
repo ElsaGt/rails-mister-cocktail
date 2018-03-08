@@ -1,7 +1,7 @@
 <div class="navbar-wagon">
-  <h1 class="navbar-wagon-brand">My Cocktails</h1>
+  <h2 class="navbar-wagon-brand">My Cocktails</h2>
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <p class="navbar-wagon-item navbar-wagon-link"><%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-success btn-lg" %></p>
+    <p class="navbar-wagon-item navbar-wagon-link"><%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-success btn" %></p>
   </div>
 </div>
 
@@ -9,18 +9,20 @@
   <div class="container ">
     <div class="row">
     <% @cocktails.each do |cocktail| %>
-        <div class="col-md-4 my_card">
-          <%= image_tag "http://lorempixel.com/300/150/food", class: "img-center random-img" %>
+      <div class="col-xs-12 col-md-4">
+        <div class="my-card">
+          <div class="banner" style="background-image: url(<%= image_path 'card-img.png' %>")></div>
           <h3 class="text-center"><%= cocktail.name %></h3>
-          <p class="text-center"><%= link_to "See details", cocktail_path(cocktail), class: "btn btn-success btn-lg" %></p>
+          <p class="text-center"><%= link_to "See details", cocktail_path(cocktail), class: "btn btn-success btn" %></p>
         </div>
+      </div>
     <% end %>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <div class="footer-copyright">
-    This footer is made with <i class="fa fa-heart"></i> at Le Wagon
+  <div class="footer-copyright text-center">
+    <i class="fa fa-heart"></i>
   </div>
 </div>
