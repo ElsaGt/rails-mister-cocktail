@@ -16,9 +16,6 @@ class DosesController < ApplicationController
     end
   end
 
-  def destroy
-  end
-
   private
 
   def dose_params
