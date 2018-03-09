@@ -1,0 +1,17 @@
+
+.footer {
+  background: white;
+  box-shadow: 2px 0px 0px rgba(0,0,0,0.3);
+  height: 50px;
+  width: 100vw;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-top: 10px;
+}
+.footer .fa-heart {
+  color: $green;
+}
+
