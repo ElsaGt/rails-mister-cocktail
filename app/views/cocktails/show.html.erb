@@ -1,18 +1,19 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(200,200,200,0.6) 0%, rgba(100,100,100,0.6) 50%), url(<%= image_path 'card-img.png' %>)">
+<div class="banner" style="background-image: url('<%= image_path @cocktail.image %>')">
   <div class="banner-content">
 
-<h1 class="text-center"><%= @cocktail.name %></h1>
+<div class="my-container"><h1 class="text-center"><%= @cocktail.name %></h1>
 
-<% @cocktail.doses.each do |dose| %>
+<!-- <div><p><strong>Ingredients:</strong></p> -->
+  <% @cocktail.doses.each do |dose| %>
   <p class="text-center"><%= dose.description %>
   <%= dose.ingredient.name %></p>
-<% end %>
+<% end %></div>
 
 <div class="text-center links"><%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-success btn" %>
-<%= link_to "Go back", cocktails_path, class: "btn btn-success btn" %><div/>
+<%= link_to "Go back", cocktails_path, class: "btn btn-success btn" %><div/></div>
 
-<div class="footer">
+<!-- <div class="footer">
   <div class="footer-copyright text-center">
     <i class="fa fa-heart"></i>
   </div>
-</div
+</div -->

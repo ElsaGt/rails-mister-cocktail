@@ -8,31 +8,35 @@
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background: white;
   transition: all 0.3s ease;
-  height: 70px;
+  height: 50px;
   padding: 0px 30px;
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
+  // align-item: center;
   h2 {
     padding-bottom: 20px;
   }
   .btn {
     margin-top: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 }
 
-.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+// .navbar-wagon-right {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
 
 .my-container {
   margin: 0 auto;
-  width: 970px;
+  max-width: 1000px;
 }
 
 .my-card {
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   margin: 50px 20px;
   border-radius: 5px;
   border: 3px, solid, white;
@@ -43,27 +47,33 @@
   // }
   .banner {
     // margin: 20px 10px 40px 10px;
-    height: 200px;
+    height: 400px;
     border-radius: 5px;
     // border: 3px solid white;
   }
-  .btn {
+  .title {
+    text-decoration: none;
+    font-family: Sriracha;
+    color: black;
+    font-size: 24px;
+  }
+  .card-footer {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
-.footer {
-  background: white;
-  box-shadow: 2px 0px 0px rgba(0,0,0,0.3);
-  height: 50px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
-  position: sticky;
-  left: 0;
-  bottom: 0;
-  padding-top: 10px;
-}
-.footer .fa-heart {
-  color: $green;
-}
+// .footer {
+//   background: white;
+//   box-shadow: 2px 0px 0px rgba(0,0,0,0.3);
+//   height: 50px;
+//   padding: 0px 50px;
+//   color: rgba(0,0,0,0.3);
+//   position: sticky;
+//   left: 0;
+//   bottom: 0;
+//   padding-top: 10px;
+// }
+// .footer .fa-heart {
+//   color: $green;
+// }
